@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="z.js"></script>
+    <script src="z.js" defer></script>
     <style>
         .inputs {
+            display: flex;
             align-self: center;
             gap: 20px;
         }
 
-        .resiltcont{
+        .resiltcont {
             display: flex;
+        }
+
+        .error {
+            border: 2px solid red;
+            background-color: #ffe5e5;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
-    <div class="input.s">
-        <input id = "firstInput" type="text">
-        <input id = "secondInput" type="text">
-        <input id = "thirdInput" type="text">
+    <div class="inputs">
+        <div>
+            <input id="firstInput" type="text">
+            <p id="firstInputError"></p>
+        </div>
+        <div>
+            <input id="secondInput" type="text">
+            <p id="secondInputError"></p>
+        </div>
+        <div>
+            <input id="thirdInput" type="text">
+            <p id="thirdInputError"></p>
+        </div>
     </div>
-    <button id = "button">Рассчитать</button>
-    <div>
+    <button id="button">Рассчитать</button>
+    <div class="resultcont">
         <p>Результат</p>
-        <p class = "result"></p>
+        <p class="result"></p>
     </div>
 </body>
+
 </html>
