@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="vc.js" defer></script>
+    <style>
+        .inputs {
+            display: flex;
+            align-self: center;
+            gap: 20px;
+        }
+
+        .resiltcont {
+            display: flex;
+        }
+
+        .error {
+            border: 2px solid red;
+            background-color: #ffe5e5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="inputs">
+        <div>
+            <input id="firstInput" type="text">
+            <p id="firstInputError"> Вес</p>
+        </div>
+        <div>
+            <input id="secondInput" type="text">
+            <p id="secondInputError"> Рост</p>
+        </div>
+    </div>
+    <button id="button">Рассчитать</button>
+    <div class="resultcont">
+        <p>ИМТ:</p>
+        <p class="result"></p>
+        <p class="data"></p>
+    </div>
+</body>
+
+</html>
